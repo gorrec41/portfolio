@@ -1,0 +1,110 @@
+.nav{
+    max-width: 1400px;
+    padding-top: 81px;
+    padding-bottom: 162px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 900;
+    .linebig::after{
+        bottom: 4px;
+    }
+}
+
+
+.navigation{
+    font-size: 20px;
+    font-weight: 700;
+    
+    a{
+        color: var(--black);
+    }
+}
+.navigation_link{
+    margin-right: 73px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.nav_social-wrap{
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.nav_social_wrap-icon{
+    width: 28px;
+    margin-right: 20px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.nav_social-icon{
+    svg{
+        path{
+            color: var(--black);
+        }
+    }
+}
+.in:hover,
+.in:active
+{
+    svg{
+        path{
+            color: var(--blue);
+        }
+    }
+}
+.git:hover,
+.git:active
+{
+    svg{
+        path{
+            color: var(--green);
+        }
+    } 
+}
+.vk:hover,
+.vk:active
+{
+    svg{
+        path{
+            color: var(--darblue);
+        }
+    } 
+}
+#nav-circle{
+    position: fixed;
+    z-index: 100;
+    right: 15px;
+    top: 39%; 
+    z-index: 300;
+}
+#nav-circle li{
+    width: 14px;
+    height: 14px;
+    background-color:  rgba(241, 234, 15, 0.5);
+    border-radius: 50%;
+    margin-bottom: 25px;
+    transition: 0.5s;
+}
+#nav-circle li a{
+    display: block;
+    height: 100%;
+}
+#nav-circle li.active{
+    background-color:  rgba(78, 29, 156, 1);
+    box-shadow: 0 0 10px rgba(8, 52, 173, 0.7);
+}
+input, textarea{
+    border-bottom: 2px solid #eaeaea;
+    outline: none;
+}

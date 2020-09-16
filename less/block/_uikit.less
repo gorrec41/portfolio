@@ -1,0 +1,161 @@
+:root{
+    --blue: rgb(3, 155, 229);
+    --darblue: #45668e;
+    --yellow: rgb(251, 219, 75);
+    --red: rgb(234, 115, 109);
+    --black:#000;
+    --green:#6cc644;
+
+    --fontsreg: 'M PLUS 1p';
+    --btncolor: rgb(251, 220, 77);
+    --btncolorhover: rgb(255, 210, 0);
+    --btncoloractiv: rgb(225, 188, 16);
+    --btncontact:#464646;
+    --btncontacthover:#797979;
+    --btncontactactiv:#181818;
+    --emailcolor:#000;
+    --emailcolorhover: rgb(121, 202, 241);
+    --emailcoloractiv: rgb(245, 183, 180);
+}
+.linebig{
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    &::after{
+        content: "";
+        position: absolute;
+        left: -6px;
+        right: -6px;
+        height: 12px;
+        background-color: var(--yellow);
+        z-index: -1;
+    }
+}
+
+.linesmall{
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        height: 7px;
+        bottom: 3px;
+        background-color: var(--yellow);
+        z-index: -1;
+    }
+}
+.linelink{
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    &::after{
+        content: "";
+        position: absolute;
+        left: -3px;
+        right: -3px;
+        bottom: 2px;
+        height: 3px;
+        background-color: var(--yellow);
+        z-index: -1;
+        width: 0%;
+        transition: 0.5s;
+    }
+}
+.linelink:hover::after{
+    width: 110%;
+}
+.link_btn-yellow,
+.link_btn-white,
+.portfolio_btn,
+.form_btn
+{
+    padding: 12px 36px;
+    border-radius: 35px;
+    font-size: 22px;
+    font-weight: 700;
+    
+}
+.link_btn-yellow,
+.form_btn{
+    background-color: var(--btncolor);
+    border: 4px solid var(--btncolor);
+    color: var(--black);
+    &:hover{
+        background-color: var(--btncolorhover);
+        border: 4px solid var(--btncolorhover);
+    }
+    &:active{
+        background-color: var(--btncoloractiv);
+        border: 4px solid var( --btncoloractiv);  
+    }
+}
+.link_btn-white{
+    color: var(--btncontact);
+    border: 4px solid var(--btncontact);
+    box-sizing: border-box;
+    &:hover{
+        color: var(--btncontacthover);
+        border: 4px solid var(--btncontacthover);
+    }
+    &:active{
+        color: var(--btncontactactiv);
+        border: 4px solid var(--btncontactactiv);
+    }
+}
+.portfolio_btn{
+    background-color: rgba(255, 255, 255, .9);
+    border: 4px solid rgba(78, 29, 156, 1);
+    color: rgba(78, 29, 156, 1);
+    box-sizing: border-box;
+}
+.portfolio_btn:hover{
+    color: var( --darblue);
+    border: 4px solid var( --darblue);
+}
+.social_icon{
+    width: 52px;
+    height: 52px;
+    margin-right: 32px;
+    &:last-child{
+        margin-right: 0;
+    } 
+}
+.icon-vk{
+
+}
+.icon-google,
+.icon-vk,
+.icon-git
+{
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    &:hover{
+        box-shadow: 0 5px 30px rgba(78, 29, 156, 1);
+        transition: 1s;
+    }
+}
+.icon-vk{
+    border:2px solid #4c75a3;
+}           // box-shadow: 0 0 10px rgba(78, 29, 156, .7);
+
+.link-line{
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    &::after{
+        content: "";
+        position: absolute;
+        left: -3px;
+        right: -3px;
+        bottom: 2px;
+        height: 3px;
+        background-color: rgba(78, 29, 156, 1);
+        z-index: -1;
+        width: 0%;
+        transition: 0.3s;
+    }
+}

@@ -1,0 +1,43 @@
+/*Header имеет ширину max-width:1600px;
+Обратите внимание на фон с вертикальными линиями. Вам необходимо 
+в фотошопе вырезать фрагмент фона высотой максимум 15px и шириной 1600px 
+и указать фону в хедере background-repeat: repeat-y;
+В хедере создаём блок с максимальной шириной max-width:1400px; 
+Внутри блока должны находится: логотип, навигация, блок с иконками соцсетей.
+После блока с логотипом, навигацией и соцсетями создаём блок container с шириной max-width:1140px.
+Внутри блока container размещаем два блока шириной по 50% для контента.*/
+button,
+input{
+    display: block;
+    outline: none;
+    border: 0;
+}
+input:active,
+input:hover,
+input:focus {
+outline: none;
+}
+button{
+    cursor: pointer;
+}
+textarea{
+    border: 0;
+    width: 100%;
+    display: block;
+    outline: none;
+    resize: none;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    @media (min-width: 768px){
+
+    }
+    @media (min-width: 1200px){
+        
+    }
+}
+.d-none{
+    display: none;
+}
