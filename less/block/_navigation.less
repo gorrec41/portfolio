@@ -1,31 +1,57 @@
 .nav{
-    max-width: 1400px;
-    padding-top: 81px;
-    padding-bottom: 162px;
+//290
+    padding-top: 36px;
+    padding-bottom: 40px;  
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 290px;
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+
+    @media (min-width: 768px){
+
+    }
+    @media (min-width: 1200px){
+        max-width: 1400px;
+        max-width: 1400px;
+        padding-top: 81px;
+        padding-bottom: 162px;
+    }
 }
 .nav_logo{
     display: inline-block;
     text-transform: uppercase;
-    font-size: 42px;
-    line-height: 1.2;
+    font-size: 42px; 
     font-weight: 900;
+    line-height: 1.2;
     .linebig::after{
         bottom: 4px;
+    }
+    @media (min-width: 768px){
+
+    }
+    @media (min-width: 1200px){
+       
     }
 }
 
 
 .navigation{
-    font-size: 20px;
-    font-weight: 700;
-    
-    a{
-        color: var(--black);
+    display: none;
+    @media (min-width: 768px){
+
+    }
+    @media (min-width: 1200px){
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 700;
+        a{
+            color: var(--black);
+        }
     }
 }
 .navigation_link{
@@ -82,11 +108,18 @@
     } 
 }
 #nav-circle{
-    position: fixed;
-    z-index: 100;
-    right: 15px;
-    top: 39%; 
-    z-index: 300;
+    display: none;
+    @media (min-width: 768px){
+
+    }
+    @media (min-width: 1200px){
+        display: block;
+        position: fixed;
+        z-index: 100;
+        right: 15px;
+        top: 39%; 
+        z-index: 300;
+    }
 }
 #nav-circle li{
     width: 14px;

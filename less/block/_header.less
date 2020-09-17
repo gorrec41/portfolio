@@ -26,8 +26,9 @@
 .header-author{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
     @media (min-width: 768px){
-
+        flex-wrap: nowrap;
     }
     @media (min-width: 1200px){
         
@@ -40,12 +41,24 @@
 .author-title{
     margin-bottom: 20px;
     span{
-        font-size: 90px;
+        font-size: 42px;
         font-weight: 800;
         line-height: 1.1;
+        @media (min-width: 768px){
+
+        }
+        @media (min-width: 1200px){
+            font-size: 90px;
+        }
     } 
     .linebig::after{
         bottom: 20px;
+        @media (min-width: 768px){
+
+        }
+        @media (min-width: 1200px){
+            
+        }
     }
     @media (min-width: 768px){
 
@@ -53,6 +66,7 @@
     @media (min-width: 1200px){
         
     }
+    
 }
 .author-article{
     margin-bottom: 36px;
@@ -68,13 +82,13 @@
     }
 }
 .author-link{
-    display: flex;
-    justify-content: flex-start;
+    display: none;
     @media (min-width: 768px){
 
     }
     @media (min-width: 1200px){
-        
+        display: flex;
+    justify-content: flex-start;
     }
 }
 .link-btn_user{

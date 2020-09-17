@@ -8,17 +8,33 @@
 .portfolio-title{
     margin-bottom: 54px;
     span{
-        font-size: 64px;
+        font-size: 42px;
         font-weight: 800;
     }
     .linebig::after{
         bottom: 12px;
     }
+    @media (min-width: 768px){
+
+    }
+    @media (min-width: 1200px){
+        margin-bottom: 54px;
+        span{
+            font-size: 64px;
+        }
+    }
+    
 }
 .portfolio-benefits{
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 49px;
+    display: none;
+    @media (min-width: 768px){
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 49px;
+    }
+    @media (min-width: 1200px){
+        
+    }
 }
 .portfolio-control{
     margin-right: 80px;
