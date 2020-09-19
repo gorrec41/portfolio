@@ -764,6 +764,7 @@ textarea {
 .work-item_block:hover::after {
   height: 0;
   transition: 3s;
+  background-color: rgba(78, 29, 156, 0.7);
 }
 .work-item_content {
   max-width: 430px;
