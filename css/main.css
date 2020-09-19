@@ -234,6 +234,23 @@ textarea {
   width: 0%;
   transition: 0.3s;
 }
+.portfolio_link-line {
+  position: relative;
+  z-index: 2;
+  width: fit-content;
+}
+.portfolio_link-line::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  bottom: 2px;
+  height: 3px;
+  background-color: #4e1d9c;
+  z-index: -1;
+  width: 0%;
+  transition: 0.3s;
+}
 .hiader {
   width: 100%;
   height: auto;
@@ -629,6 +646,14 @@ textarea {
   left: 50%;
   transition: 2s;
   z-index: 5;
+}
+.portfolio-img_link:hover .portfolio_link-line::after {
+  transition: 1s;
+  width: 102%;
+}
+.portfolio-img_link:hover .img_link_title,
+.portfolio-img_link:hover .img_link_text {
+  color: rgba(78, 29, 156, 0.7);
 }
 .works_bg-fon {
   max-width: 1600px;

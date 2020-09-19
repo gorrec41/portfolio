@@ -103,7 +103,6 @@
 .img_link_img{
     width: 100%;
     z-index: 1;
-
 }
 .portfolio_btn{
     position: absolute;
@@ -123,5 +122,16 @@
         left: 50%;
         transition: 2s;
         z-index: 5;
+    }
+    .portfolio_link-line{
+        
+        &::after{
+            transition: 1s;
+            width: 102%;
+        }
+    }
+    .img_link_title,
+    .img_link_text{
+    color: rgba(78, 29, 156, 0.7);
     }
 }
