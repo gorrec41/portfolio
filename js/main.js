@@ -31,4 +31,18 @@ $(document).ready(function () {
         end: function () {},
         scrollChange: function ($currentListItem) {}
 });
+
+
+//scrolltop
+$('#arrowscroll').hide();
+$(window).scroll(function () {
+    if($(this).scrollTop() > 150){
+        $('#arrowscroll').fadeIn();
+    }
+    else{
+        $('#arrowscroll').fadeOut();
+        }
+    
+})
+
 })

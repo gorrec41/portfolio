@@ -1,4 +1,41 @@
 .section-work{
+    position: relative;
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+  } /* ---- particles.js container ---- */
+  #particles-js {
+
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  } /* ---- stats.js ---- */
+  .count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13e8e9;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    
+  }
+  .js-count-particles {
+    font-size: 1.1em;
+  }
+
+  .count-particles {
+    border-radius: 0 0 3px 3px;
+  }
 }
 .works_bg-fon{
     max-width: 1600px;
@@ -100,9 +137,9 @@
 .work-item_block:hover{
     width: 100%;
     height: 100%;
-    background-color: rgba(191, 235, 211, .2);
+    background-color: rgba(191, 235, 211, 0.097);
     border-radius: 0 28px 0 28px;
-    box-shadow: 0 15px 30px 10px rgba(78, 29, 156, .7);
+    box-shadow: 0 15px 30px 10px rgba(78, 29, 156, .2);
     transition: 1s;
     z-index: 20;
     transition: 0.5s;

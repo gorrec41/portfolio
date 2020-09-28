@@ -61,10 +61,13 @@
     }
 }
 .nav_social-wrap{
-    margin-top: 10px;
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
+    display: none;
+    @media (min-width: 1200px){
+        margin-top: 10px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
 }
 .nav_social_wrap-icon{
     width: 28px;
@@ -124,7 +127,7 @@
 #nav-circle li{
     width: 14px;
     height: 14px;
-    background-color:  rgba(241, 234, 15, 0.5);
+    background-color:  rgba(241, 233, 15, 0.316);
     border-radius: 50%;
     margin-bottom: 25px;
     transition: 0.5s;
@@ -134,8 +137,8 @@
     height: 100%;
 }
 #nav-circle li.active{
-    background-color:  rgba(78, 29, 156, 1);
-    box-shadow: 0 0 10px rgba(8, 52, 173, 0.7);
+    background-color:  rgba(78, 29, 156, .4);
+    box-shadow: 0 0 5px rgba(8, 52, 173, 0.7);
 }
 input, textarea{
     border-bottom: 2px solid #eaeaea;
